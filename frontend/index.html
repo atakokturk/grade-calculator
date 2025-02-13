@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grade Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Grade Calculator</h1>
+    
+    <div class="container">
+        <table>
+            <thead>
+                <tr>
+                    <th>Assignment/Exam</th>
+                    <th>Grade</th>
+                    <th>Out Of</th>
+                    <th>Weight</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody id="grade-fields">
+                <tr>
+                    <td><input type="text" placeholder="Assignment/Exam"></td>
+                    <td><input type="number" class="grade" placeholder="Grade"></td>
+                    <td><input type="number" class="outOf" placeholder="Out Of"></td>
+                    <td><input type="number" class="weight" placeholder="Weight"></td>
+                    <td><button class="remove-field">Remove</button></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <button id="add-field">Add Assignment/Exam</button>
+        <button id="calculate-grade">Calculate Final Grade</button>
+
+        <h2>Current Grade: <span id="current-grade">0.00</span></h2>
+        <h2>Letter Grade: <span id="letter-grade">-</span></h2>
+   
+       
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
